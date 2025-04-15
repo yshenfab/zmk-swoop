@@ -58,7 +58,6 @@
         compatible = "zmk,combos";
 
         // [
-
         combo_lbkt {
             timeout-ms = <50>;
             key-positions = <23 24>;
@@ -67,7 +66,6 @@
         };
 
         // ]
-
         combo_rbkt {
             timeout-ms = <50>;
             key-positions = <25 26>;
@@ -76,7 +74,6 @@
         };
 
         // {
-
         combo_lbrc {
             timeout-ms = <50>;
             key-positions = <13 14>;
@@ -85,7 +82,6 @@
         };
 
         // }
-
         combo_rbrc {
             timeout-ms = <50>;
             key-positions = <15 16>;
@@ -93,8 +89,19 @@
             layers = <0>;
         };
 
-        // `
+        // (
+        combo_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <3 4>;
+        };
 
+        // )
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <5 6>;
+        };
+
+        // `
         combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <20 21>;
@@ -103,7 +110,6 @@
         };
 
         // -
-
         combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <21 22>;
@@ -112,7 +118,6 @@
         };
 
         // _
-
         combo_under {
             bindings = <&kp UNDER>;
             key-positions = <22 23>;
@@ -121,7 +126,6 @@
         };
 
         // =
-
         combo_equal {
             bindings = <&kp EQUAL>;
             key-positions = <26 27>;
@@ -130,7 +134,6 @@
         };
 
         // +
-
         combo_plus {
             bindings = <&kp PLUS>;
             key-positions = <27 28>;
@@ -139,7 +142,6 @@
         };
 
         // ~
-
         combo_tilde {
             bindings = <&kp TILDE>;
             key-positions = <28 29>;
@@ -148,7 +150,6 @@
         };
 
         // C-SPC
-
         combo_c_spc {
             bindings = <&kp LC(SPACE)>;
             key-positions = <10 11>;
@@ -157,7 +158,6 @@
         };
 
         // C-S-TAB
-
         combo_tab_prev {
             bindings = <&kp LC(LS(TAB))>;
             key-positions = <11 12>;
@@ -166,7 +166,6 @@
         };
 
         // C-TAB
-
         combo_tab_next {
             bindings = <&kp LC(TAB)>;
             key-positions = <12 13>;
@@ -175,7 +174,6 @@
         };
 
         // - [ ]
-
         combo_todo {
             bindings = <&todo>;
             key-positions = <14 15>; // gh
@@ -192,7 +190,7 @@
 
         combo_email {
             bindings = <&email>;
-            key-positions = <2 26 10>; // em
+            key-positions = <2 26 10>; // ema
             timeout-ms = <40>;
             layers = <0>;
         };
@@ -200,6 +198,13 @@
         combo_tel {
             bindings = <&tel>;
             key-positions = <4 2 18>; // tel
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_mobile {
+            bindings = <&mobile>;
+            key-positions = <24 26 8>; // mob
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -223,23 +228,6 @@
             key-positions = <7 12>; // id
             timeout-ms = <50>;
             layers = <0>;
-        };
-
-        combo_mobile {
-            bindings = <&mobile>;
-            key-positions = <24 26 8>; // rad
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <3 4>;
-        };
-
-        combo_rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <5 6>;
         };
     };
 

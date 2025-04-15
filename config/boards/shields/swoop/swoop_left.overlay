@@ -7,6 +7,7 @@
 #include "swoop.dtsi"
 
 &kscan0 {
+    wakeup-source;
     diode-direction = "col2row";
     col-gpios
         = <&pro_micro 15 (GPIO_ACTIVE_HIGH)> // COL0 B1

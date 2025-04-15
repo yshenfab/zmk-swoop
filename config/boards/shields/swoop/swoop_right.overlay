@@ -11,6 +11,7 @@
 };
 
 &kscan0 {
+    wakeup-source;
     diode-direction = "col2row";
     col-gpios
         = <&pro_micro 21 (GPIO_ACTIVE_HIGH)> // COL0
